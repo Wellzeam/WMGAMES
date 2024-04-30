@@ -1,32 +1,39 @@
 <html>
+
 <head>
-<title>WM GAMES</title>
-<script language='JavaScript'>
-function SomenteNumero(e){
-    var tecla=(window.event)?event.keyCode:e.which;   
-    if((tecla>47 && tecla<58)) return true;
-    else{
-    	if (tecla==8 || tecla==0) return true;
-	else  return false;
-    }
-}
-function msg(){
-alert("Seu comentário foi enviado com sucesso.");
-}
-</script>
+    <title>WM GAMES</title>
+    <script language='JavaScript'>
+        function SomenteNumero(e) {
+            var tecla = (window.event) ? event.keyCode : e.which;
+            if ((tecla > 47 && tecla < 58)) return true;
+            else {
+                if (tecla == 8 || tecla == 0) return true;
+                else return false;
+            }
+        }
+        function msg() {
+            alert("Seu comentário foi enviado com sucesso.");
+        }
+    </script>
 </head>
 <meta charset="utf-8">
-<body bgcolor=black>
-<font color=white>
-<center><img src="Logo games.png"></center><br><br>
-<hr><center>
-<font face="Aachen BT" size="8"><center>Fale conosco</center></font>
-<br><br><br>
-Nome:<br><input type="text" size="30" title=Nome><br><br>
-E-Mail:<br><input type="text" size="50" title=E-Mail><br><br>
-Telefone:<br><input type="text" size="20" maxlength=11 title=telefone onkeypress='return SomenteNumero(event)'><br><br>
-Deixe seu Comentário:<br><textarea name="Deixe seu Comentário" rows=10 cols=100></textarea><br><br>
-<input type=button value=Enviar onClick=msg()>
 
+<body bgcolor=black>
+    <font color=white>
+        <center><img src="./images/Logo games.png"></center><br><br>
+        <hr>
+        <center>
+            <font face="Aachen BT" size="8">
+                <center>Fale conosco</center>
+            </font>
+            <br><br><br>
+            Nome:<br><input type="text" size="30" title=Nome><br><br>
+            E-Mail:<br><input type="text" size="50" title=E-Mail><br><br>
+            Telefone:<br><input type="text" size="20" maxlength=11 title=telefone onkeypress='return SomenteNumero(event)'><br><br>
+            Deixe seu Comentário:<br><textarea name="Deixe seu Comentário" rows=10 cols=100></textarea><br><br>
+            <input type=button value=Enviar onClick=msg()>
+        </center>
+    </font>
 </body>
+
 </html>
